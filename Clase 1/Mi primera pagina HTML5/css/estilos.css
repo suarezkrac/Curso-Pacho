@@ -27,6 +27,11 @@ nav ul{
 	padding: 0;
 	margin: 0;
 }
+
+section{
+	width: 100%;
+	min-height: 500px;
+}
 /* 4. IDENTIFICADORES CLASES A-Z*/
 
 .botones{
