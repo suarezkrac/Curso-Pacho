@@ -10,31 +10,7 @@ article{
 	border-radius: 20px;
 
 }
-aside{
-	position: fixed;
-	right: -30px;
-	top: 150px;
-	cursor: pointer;
-	-webkit-transform: rotate(-90deg);
-	-webkit-transform-origin: 100% 100%;
-	background-color: rgba(0,0,0,0.5);
 
-	-webkit-transition: right 1s, background-color 1s;
-	
-}
-
-aside div{
-	background: blue;
-	color: white;
-	padding: 5px 10px;
-	border-radius: 10px 10px 0px 0px;
-	margin-top: 40px;
-}
-aside:hover{
-	
-	right: 0px;
-	background-color: rgba(0,0,0,0);
-}
 
 body, h1{
 	margin: 0;
@@ -90,6 +66,44 @@ section{
 }
 
 /* 5. IDENTIFICADORES ID */
+#banner{
+	height: 100px;
+	width: 100%;
+	text-align: center;
+	background-image: -webkit-linear-gradient(top, rgba(44,109,139,0.81) 0%, rgba(255,255,255,1.00) 100%);
+}
+#banner iframe{
+	width: 550px;
+	height: 100px;
+	border: none;
+	overflow: hidden;
+}
+
+#chat{
+	position: fixed;
+	right: -30px;
+	top: 150px;
+	cursor: pointer;
+	-webkit-transform: rotate(-90deg);
+	-webkit-transform-origin: 100% 100%;
+	background-color: rgba(0,0,0,0.5);
+
+	-webkit-transition: right 1s, background-color 1s;
+	
+}
+
+#chat div{
+	background: blue;
+	color: white;
+	padding: 5px 10px;
+	border-radius: 10px 10px 0px 0px;
+	margin-top: 40px;
+}
+#chat:hover{
+	
+	right: 0px;
+	background-color: rgba(0,0,0,0);
+}
 #logo{
 	width: 130px;
 }
