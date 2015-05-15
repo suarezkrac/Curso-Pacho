@@ -1,0 +1,32 @@
+.row{
+	max-width: 100%;
+}
+#slide{
+	min-height: 200px;
+	background: #ccc;
+}
+#bloque1, #bloque2, #bloque3, #bloque4, #bloque5{
+	min-height: 180px;
+}
+#bloque1{
+	background-color: blue;
+}
+
+#bloque2{
+	background-color: cyan;
+}
+
+#bloque3{
+	background-color: black;
+}
+
+#bloque4{
+	background-color: yellow;
+}
+
+#bloque5{
+	background-color: red;
+}
+#fila{
+	margin-top: 20px;
+}
