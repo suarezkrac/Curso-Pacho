@@ -1,0 +1,171 @@
+/* 1. FONT FACE */
+@font-face {
+    font-family: 'sinkin_sans300_light_italic';
+    src: url('../assets/fonts/fuente1/sinkinsans-300lightitalic-webfont.eot');
+    src: url('../assets/fonts/fuente1/sinkinsans-300lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/fuente1/sinkinsans-300lightitalic-webfont.woff2') format('woff2'),
+         url('../assets/fonts/fuente1/sinkinsans-300lightitalic-webfont.woff') format('woff'),
+         url('../assets/fonts/fuente1/sinkinsans-300lightitalic-webfont.ttf') format('truetype'),
+         url('../assets/fonts/fuente1/sinkinsans-300lightitalic-webfont.svg#sinkin_sans300_light_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* 2. ANIMACIONES */
+/* 3. IDENTIFICADORES ETIQUETAS A-Z*/
+article{
+	background-color: rgba(255,255,255,0.5);
+	width: 60%;
+	padding: 10px 0;
+	max-width: 700px;
+	margin: 10px auto;
+	border-radius: 20px;
+
+}
+
+
+body, h1{
+	margin: 0;
+}
+h1{
+	font-family: 'Lobster', cursive;
+}
+header{
+	/* 
+		CHROME - SAFARI -> webkit
+		FIREFOX -> moz
+		OPERA -> o
+		IE -> ms IE 9+
+	*/		
+	background-image: -webkit-linear-gradient(top, white 0%, rgba(255,255,255,0) 100%);
+	background-image: -moz-linear-gradient(top, white 0%, rgba(255,255,255,0) 100%);
+	background-image: -o-linear-gradient(top, white 0%, rgba(255,255,255,0) 100%);
+	background-image: -ms-linear-gradient(top, white 0%, rgba(255,255,255,0) 100%);
+
+	text-align: center;
+	padding: 20px 0px;
+	position: absolute;
+	width: 100%;
+}
+header div{
+	display: inline-block;
+	vertical-align: middle;
+}
+nav ul, article ul{
+	padding: 0;
+	margin: 0;
+}
+section{
+	width: 100%;
+	min-height: 500px;
+	text-align: center;
+	padding-bottom: 50px;
+
+}
+/* 4. IDENTIFICADORES CLASES A-Z*/
+
+.botones{
+	font-family: "sinkin_sans300_light_italic";
+	list-style: none;
+	display: inline-block;
+	/*el display es para que esten en linea*/
+	background-color: white;
+	padding: 5px 10px;
+	cursor: pointer;
+	border-radius: 10px;
+	margin: 10px 5px 0px;
+	box-shadow: inset 0px 0px 5px gray, 2px 2px 10px black;
+}
+.botones:hover{
+	background-color: #ccc;
+	color: white;
+}
+
+/* 5. IDENTIFICADORES ID */
+#banner{
+	height: 100px;
+	width: 100%;
+	text-align: center;
+	background-image: -webkit-linear-gradient(top, rgba(44,109,139,0.81) 0%, rgba(255,255,255,1.00) 100%);
+}
+#banner iframe{
+	width: 550px;
+	height: 100px;
+	border: none;
+	overflow: hidden;
+}
+
+#chat{
+	position: fixed;
+	right: -30px;
+	top: 150px;
+	cursor: pointer;
+	-webkit-transform: rotate(-90deg);
+	-webkit-transform-origin: 100% 100%;
+	background-color: rgba(0,0,0,0.5);
+
+	-webkit-transition: right 1s, background-color 1s;
+	
+}
+
+#chat div{
+	background: blue;
+	color: white;
+	padding: 5px 10px;
+	border-radius: 10px 10px 0px 0px;
+	margin-top: 40px;
+}
+#chat:hover{
+	
+	right: 0px;
+	background-color: rgba(0,0,0,0);
+}
+#logo{
+	width: 130px;
+}
+#equipos, #equipos li{
+	background-position: center center;
+}
+#equipos{
+	padding-top: 200px;
+	background-image: url(../img/estadio.jpg);
+	background-size: cover;
+}
+#equipos li{
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	background-size: auto 80%;
+	background-repeat: no-repeat;
+	
+	cursor: pointer;
+	opacity: 0.3;
+	
+}
+#equipos li:hover{
+	opacity: 1;
+	-webkit-transform: scale(1.2);
+	-webkit-transition: -webkit-transform 2s, opacity 1s;
+
+}
+
+#equipos li:nth-child(1){
+	background-image: url(../img/colombia.png);
+}
+#equipos li:nth-child(2){
+	background-image: url(../img/EscudoAFA2.png);
+}
+#equipos li:nth-child(3){
+	background-image: url(../img/chile.png);
+}
+#equipos li:nth-child(4){
+	background-image: url(../img/Escudo_Brasil.png);
+}
+#equipos li:nth-child(5){
+	background-image: url(../img/escudo_venezuela.gif);
+}
+#equipos li:nth-child(6){
+	background-image: url(../img/escudo-peru.png);
+}
+/* 6. MEDIA QUERIES */
+/* 7. MEDIA PRINT */
