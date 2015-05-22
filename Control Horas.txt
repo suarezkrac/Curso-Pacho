@@ -2,8 +2,10 @@ Control Horas
 Clase 1 -> 3h
 Clase 2 -> 3h
 Clase 3 -> 2h
-Clase 4 -> 2h
+Clase 4 -> 2.5h
 Clase 5 -> 2h
-Clase 6 -> 2h 
+Clase 6 -> 2h
+Clase 7 -> 2h
+Clase 8 -> 2h 
 
-SubTotal : 14h
+SubTotal : 18.5h
