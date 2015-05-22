@@ -1,0 +1,308 @@
+/* 1. FONT FACE */
+/* 2. ANIMACIONES */
+@-webkit-keyframes animacionBalon{
+	0%{
+		top: 2%;
+		left: 2%;
+		-webkit-transform: rotate(0deg);
+	}
+	25%{
+		top: 2%;
+		left: 94%;
+	}
+	50%{
+		top: 90%;
+		left: 94%;	
+	}
+	75%{
+		top: 90%;
+		left: 2%;
+	}
+	100%{
+		top: 2%;
+		left: 2%;
+		-webkit-transform: rotate(720deg);
+	}
+}
+
+
+/* 3. IDENTIFICADORES ETIQUETAS A-Z*/
+article{
+	background-color: rgba(255,255,255,0.5);
+	width: 60%;
+	padding: 10px 0;
+	max-width: 700px;
+	margin: 10px auto;
+	border-radius: 20px;
+
+}
+
+
+body, h1{
+	margin: 0;
+}
+header{
+	/* 
+		CHROME - SAFARI -> webkit
+		FIREFOX -> moz
+		OPERA -> o
+		IE -> ms IE 9+
+	*/		
+	background-image: -webkit-linear-gradient(top, white 0%, rgba(255,255,255,0) 100%);
+	background-image: -moz-linear-gradient(top, white 0%, rgba(255,255,255,0) 100%);
+	background-image: -o-linear-gradient(top, white 0%, rgba(255,255,255,0) 100%);
+	background-image: -ms-linear-gradient(top, white 0%, rgba(255,255,255,0) 100%);
+
+	text-align: center;
+	padding: 20px 0px;
+	position: absolute;
+	width: 100%;
+}
+header div{
+	display: inline-block;
+	vertical-align: middle;
+}
+nav ul, article ul{
+	padding: 0;
+	margin: 0;
+}
+section{
+	width: 100%;
+	min-height: 500px;
+	text-align: center;
+	padding-bottom: 50px;
+
+}
+/* 4. IDENTIFICADORES CLASES A-Z*/
+
+.botones{
+	list-style: none;
+	display: inline-block;
+	/*el display es para que esten en linea*/
+	background-color: white;
+	
+	cursor: pointer;
+	border-radius: 10px;
+	margin: 10px 5px 0px;
+	box-shadow: inset 0px 0px 5px gray, 2px 2px 10px black;
+}
+.botones a{
+	display: block;
+	padding: 5px 10px;
+	text-decoration: none;
+}
+.botones:hover{
+	background-color: #ccc;
+	color: white;
+}
+.equipo_fila img{
+	height: 100px;
+	-webkit-transition: height 1s;
+}
+.fila_resultados{
+	margin:0;
+	padding: 0;
+}
+.fila_resultados li{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 10px;
+}
+.num_gol{
+	background: #eee;
+	padding: 10px;
+	font-size: 2.5em;
+}
+
+.bordesRojos{
+	border: 2px solid red !important;
+}
+
+/* 5. IDENTIFICADORES ID */
+#resultados{
+	height: 650px;
+}
+#contacto{
+	padding-top: 50px;
+	background-image: -webkit-linear-gradient(top, rgba(44,109,139,0.81) 0%, rgba(255,255,255,1.00) 100%);
+	height: 650px;
+}
+#contacto input, #contacto textarea{
+	width: 80%;
+	padding: 5px 5%;
+	font-size: 1.4em;
+	margin: 5px 0;
+	border-radius: 10px;
+	border: none;
+
+}
+#contacto textarea{
+	min-height: 150px;
+
+}
+#balon{
+	width: 50px;
+	height: 50px;
+	background-image: url(../img/Soccer_ball.png);
+	background-size: 100% 100%;
+	position: fixed;
+	top: 2%;
+	left: 2%;
+	border-radius: 25px;
+	-webkit-animation: animacionBalon 5s;
+	-webkit-animation-iteration-count: infinite;
+}
+#banner{
+	height: 100px;
+	width: 100%;
+	text-align: center;
+	background-image: -webkit-linear-gradient(top, rgba(44,109,139,0.81) 0%, rgba(255,255,255,1.00) 100%);
+}
+#banner iframe{
+	width: 550px;
+	height: 100px;
+	border: none;
+	overflow: hidden;
+}
+#colombia_video{
+	position: fixed;
+	background: rgba(0,0,0,0.9);
+	width: 90%;
+	height: 95%;
+	top: 10px;
+	left: 0;
+	right: 0;
+	margin-right: auto;
+	margin-left: auto;
+	z-index: 1;
+	border-radius: 10px;
+	-webkit-transition: -webkit-transform 1s;
+	-webkit-transform: scale(0);
+}
+.ver_video{
+	-webkit-transform: scale(1) !important;
+}
+
+#videoCol{
+	width: 100%;
+	height: 100%;
+}
+
+#chat{
+	position: fixed;
+	right: -30px;
+	top: 150px;
+	cursor: pointer;
+	-webkit-transform: rotate(-90deg);
+	-webkit-transform-origin: 100% 100%;
+	background-color: rgba(0,0,0,0.5);
+
+	-webkit-transition: right 1s, background-color 1s;
+	
+}
+
+#chat div{
+	background: blue;
+	color: white;
+	padding: 5px 10px;
+	border-radius: 10px 10px 0px 0px;
+	margin-top: 40px;
+}
+#chat:hover{
+	
+	right: 0px;
+	background-color: rgba(0,0,0,0);
+}
+#logo{
+	width: 130px;
+}
+#equipos, #equipos li{
+	background-position: center center;
+}
+#equipos{
+	padding-top: 200px;
+	background-image: url(../img/estadio.jpg);
+	background-size: cover;
+}
+#equipos li{
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	background-size: auto 80%;
+	background-repeat: no-repeat;
+	
+	cursor: pointer;
+	opacity: 0.3;
+	
+}
+#equipos li:hover{
+	opacity: 1;
+	-webkit-transform: scale(1.2);
+	-webkit-transition: -webkit-transform 2s, opacity 1s;
+
+}
+
+#equipos li:nth-child(1){
+	background-image: url(../img/colombia.png);
+}
+#equipos li:nth-child(2){
+	background-image: url(../img/EscudoAFA2.png);
+}
+#equipos li:nth-child(3){
+	background-image: url(../img/chile.png);
+}
+#equipos li:nth-child(4){
+	background-image: url(../img/Escudo_Brasil.png);
+}
+#equipos li:nth-child(5){
+	background-image: url(../img/escudo_venezuela.gif);
+}
+#equipos li:nth-child(6){
+	background-image: url(../img/escudo-peru.png);
+}
+/* 6. MEDIA QUERIES */
+
+@media screen and (max-width: 990px){
+	article{
+		width: 80%;
+	}
+}
+@media screen and (max-width: 800px){
+	article{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 600px){
+	.fila_resultados li{
+		margin: 3px;
+	}
+	#chat{
+		display: none;
+	}
+	#banner iframe{
+		display: none;
+		width: 100%;
+	}
+	.fecha_partido{
+		display: block !important;
+	}
+
+}
+@media screen and (max-width: 450px){
+
+	.fila_resultados li{
+		margin: 1px;
+	}
+	.equipo_fila img{
+		height: 50px;
+	}
+}
+
+
+/* 7. MEDIA PRINT */
+
+@media print {
+	.fila_resultados, #chat {
+		display: none
+	}
+}
