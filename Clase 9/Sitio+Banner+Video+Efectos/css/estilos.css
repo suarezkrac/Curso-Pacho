@@ -41,6 +41,14 @@ article{
 body, h1{
 	margin: 0;
 }
+.changeHeader{
+	background: black;
+	background-image: -webkit-linear-gradient(top, rgba(44,109,139,1) 0%, rgba(255,255,255,1) 100%);
+	background-image: -moz-linear-gradient(top, rgba(44,109,139,1) 0%, rgba(255,255,255,1) 100%);
+	background-image: -o-linear-gradient(top, rgba(44,109,139,1) 0%, rgba(255,255,255,1) 100%);
+	background-image: -ms-linear-gradient(top, rgba(44,109,139,1) 0%, rgba(255,255,255,1) 100%);
+
+}
 header{
 	/* 
 		CHROME - SAFARI -> webkit
@@ -58,6 +66,8 @@ header{
 	position: fixed;
 	width: 100%;
 	z-index: 1;
+
+	
 }
 header div{
 	display: inline-block;
@@ -216,6 +226,7 @@ section{
 }
 #logo{
 	width: 130px;
+	-webkit-transition: width 1s;
 }
 #equipos, #equipos li{
 	background-position: center center;
