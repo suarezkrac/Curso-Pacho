@@ -6,6 +6,7 @@ Clase 4 -> 2.5h
 Clase 5 -> 2h
 Clase 6 -> 2h
 Clase 7 -> 2h
-Clase 8 -> 2h 
+Clase 8 -> 2h
+Clase 9 -> 2h 
 
-SubTotal : 18.5h
+SubTotal : 20.5h
