@@ -25,4 +25,12 @@ function paginaOK () {
 	$('#alerta').dialog();
 
 	$('#cedula').tooltip();
+
+	$('#aplicar').on("click", aplicarEfecto);
+}
+
+function aplicarEfecto () {
+	var x = $('#efectos').val();
+	$('#box4').effect(x,2000);
+
 }

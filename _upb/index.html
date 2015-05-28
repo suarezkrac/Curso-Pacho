@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>fullPage.js One Page Scroll Sites</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage plugin by Alvaro Trigo. Create fullscreen pages fast and simple. One page scroll like iPhone website." />
+	<meta name="keywords"  content="fullpage,jquery,alvaro,trigo,plugin,fullscren,screen,full,iphone5,apple" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/examples.css" />
+
+
+	<style>
+
+		/* Sections
+		 * --------------------------------------- */
+		#section0 img,
+		#section1 img{
+			margin: 20px 0 0 0;
+		}
+		#section2 img{
+			margin: 20px 0 0 52px;
+		}
+		#section3 img{
+			bottom: 0px;
+			position: absolute;
+			margin-left: -420px;
+		}
+		.intro p{
+			width: 50%;
+			margin: 0 auto;
+			font-size: 1.5em;
+		}
+		.twitter-share-button{
+			position: absolute;
+			z-index: 99;
+			right: 149px;
+			top: 9px;
+		}
+
+	</style>
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="js/examples.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#1bbc9b'],
+				anchors: ['firstPage'],
+				menu: '#menu',
+				scrollingSpeed: 1000
+			});
+
+		});
+	</script>
+
+</head>
+<body>
+
+
+
+<header>
+	<img src="img/header 1280x146.jpg">
+
+</header>
+
+<div id="fullpage">
+	<div class="section" id="section1">
+	    <div class="slide" id="slide1"></div>
+		<div class="slide" id="slide2"></div>
+		<div class="slide" id="slide3"></div>
+		<div class="slide" id="slide4"></div>
+		<div class="slide" id="slide5"></div>
+		<div class="slide" id="slide6"></div>
+		<div class="slide" id="slide7"></div>
+		<div class="slide" id="slide8"></div>
+		<div class="slide" id="slide9"></div>
+		<div class="slide" id="slide10"></div>
+		<div class="slide" id="slide11"></div>
+		<div class="slide" id="slide12"></div>
+		<div class="slide" id="slide13"></div>
+		<div class="slide" id="slide14"></div>
+		<div class="slide" id="slide15"></div>
+	    
+	</div>
+</div>
+<footer>
+	<img src="img/footer 1280x34-01.jpg">
+
+</footer>
+
+
+</body>
+</html>
